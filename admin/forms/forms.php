@@ -13,7 +13,10 @@
 		} else { $obj = []; }
 		
 		//Salva todos os dados do submit
-		$obj[] = $_POST;
+		$data = $_POST;
+		$data["time"] = time();
+		$obj[] = $data;
+		
 		
 		//Salva o arquivo
 		$file = fopen("admin/forms/formsubmissions.json", "w") or die("Unable to open file!");
