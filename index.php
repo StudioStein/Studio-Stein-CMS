@@ -1,4 +1,4 @@
-<?php include 'admin/init.php'; ?>
+<?php include 'admin/user/init.php'; ?>
 
 <html>
 	<head>
@@ -7,11 +7,13 @@
 		
 	</head>
 	
-	<body>
+	<body onload="location.reload()">
 	
 		<h1>Hello World</h1>
 		
 		<p>Thanks for watching</p>
+		
+		
 		
 	</body>
 	
